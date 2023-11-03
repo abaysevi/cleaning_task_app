@@ -9,7 +9,8 @@ from dateutil import parser
 app = Flask(__name__)
 
 # Configure MongoDB connection
-client = MongoClient('mongodb+srv://abaysevi:2012123958@cluster0.klirftq.mongodb.net/?retryWrites=true&w=majority')
+dblink="" # ur db link repalce it
+client = MongoClient(dblink)
 db = client['cleaningtaks_app']
 res_collection = db['res_data']
 cleaining_tasks_collection=db["cleaning-tasks"]
