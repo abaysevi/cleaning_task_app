@@ -1,0 +1,177 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Details Form</title>
+    <link rel="stylesheet" type="text/css" href="../static/res_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Restaurant Details Form</h2>
+        <form id="restaurant-form" method="post" autocomplete="off">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="cleaning">Types of Cleaning:</label>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="cleaning" value="Monthly">
+                        Monthly
+                    </label>
+                </div>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="cleaning" value="Daily">
+                        Daily
+                    </label>
+                </div>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="cleaning" value="Weekly">
+                        Weekly
+                    </label>
+                </div>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="cleaning" value="Every 2 Days">
+                        Every 2 Days
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Details Form</title>
+    <link rel="stylesheet" type="text/css" href="../static/res_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Restaurant Details Form</h2>
+        <form id="restaurant-form" method="post" autocomplete="off">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <label for="places">Cleaning Areas and Frequencies:</label>
+                <ul class="cleaning-areas">
+                    <li>
+                        Bathroom
+                        <div class="cleaning-frequencies">
+                            <label>
+                                <input type="radio" name="cleaning_bathroom" value="Monthly">
+                                Monthly
+                            </label>
+                            <label>
+                                <input type="radio" name="cleaning_bathroom" value="Daily">
+                                Daily
+                            </label>
+                            <label>
+                                <input type="radio" name="cleaning_bathroom" value="Weekly">
+                                Weekly
+                            </label>
+                            <label>
+                                <input type="radio" name="cleaning_bathroom" value="Every 2 Days">
+                                Every 2 Days
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        Hallway
+                        <div class="cleaning-frequencies">
+                            <label>
+                                <input type="radio" name="cleaning_hallway" value="Monthly">
+                                Monthly
+                            </label>
+                            <label>
+                                <input type="radio" name="cleaning_hallway" value="Daily">
+                                Daily
+                            </label>
+                            <label>
+                                <input type="radio" name="cleaning_hallway" value="Weekly">
+                                Weekly
+                            </label>
+                            <label>
+                                <input type="radio" name="cleaning_hallway" value="Every 2 Days">
+                                Every 2 Days
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        Bedrooms
+                        <div class="cleaning-frequencies">
+                            <label>
+                                <input type="radio" name="cleaning_bedrooms" value="Monthly">
+                                Monthly
+                            </label>
+                            <label>
+                                <input type="radio" name="cleaning_bedrooms" value="Daily">
+                                Daily
+                            </label>
+                            <label>
+                                <input type="radio" name="cleaning_bedrooms" value="Weekly">
+                                Weekly
+                            </label>
+                            <label>
+                                <input type="radio" name="cleaning_bedrooms" value="Every 2 Days">
+                                Every 2 Days
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        Front Office
+                        <div class="cleaning-frequencies">
+                            <label>
+                                <input type="radio" name="cleaning_frontoffice" value="Monthly">
+                                Monthly
+                            </label>
+                            <label>
+                                <input type="radio" name="cleaning_frontoffice" value="Daily">
+                                Daily
+                            </label>
+                            <label>
+                                <input type="radio" name="cleaning_frontoffice" value="Weekly">
+                                Weekly
+                            </label>
+                            <label>
+                                <input type="radio" name="cleaning_frontoffice" value="Every 2 Days">
+                                Every 2 Days
+                            </label>
+                        </div>
+                    </li>
+                    <!-- Repeat this pattern for other cleaning areas -->
+                </ul>
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required autocomplete="off">
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

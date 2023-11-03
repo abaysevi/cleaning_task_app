@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Select Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="../static/sel_res.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Select a Restaurant</h2>
+        <form method="POST" action="/cleaning_tasks">
+            <label for="restaurant">Restaurant:</label>
+            <select name="restaurant" id="restaurant">
+                {% for name in restaurant_names %}
+                <option value="{{ name }}">{{ name }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

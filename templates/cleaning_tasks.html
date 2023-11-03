@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cleaning Tasks</title>
+    <link rel="stylesheet" type="text/css" href="../static/cleaning_style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ today.strftime('%B %d %A %Y') }}</h1>
+        <h2>{{ restaurant_name }}</h2>
+        <h3>Cleaning Areas</h3>
+        <ul>
+            {% for task in cleaning_data %}
+            <li>
+                {{ task.area }} [{{ task.frequency }}]
+                <br>
+                [Last Cleaned: {{ task.last_cleaned_date }}]
+                [Next Cleaning: {{ task.next_cleaning_date }}]
+                [Days Remaining: {{ task.days_remaining }}]
+                {% if task.days_remaining <= 0 %}
+                [Due Date Count: {{ -task.days_remaining }}]
+                {% endif %}
+                {% if task.days_remaining == 0 %}
+                <button>Clean Now</button>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
