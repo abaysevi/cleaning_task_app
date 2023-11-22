@@ -5,11 +5,14 @@ from datetime import datetime,timedelta
 from datetime import datetime
 from dateutil import parser
 
+from decouple import config
+
 
 app = Flask(__name__)
 
 # Configure MongoDB connection
-dblink="" # ur db link repalce it
+dblink = config('DB_LINK')
+
 client = MongoClient(dblink)
 db = client['cleaningtaks_app']
 res_collection = db['res_data']
