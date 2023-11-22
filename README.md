@@ -1,4 +1,3 @@
-```markdown
 # Restaurant Cleaning Tasks App
 
 This is a web application built with Flask to manage restaurant details and associated cleaning tasks.
