@@ -65,4 +65,3 @@ You can install these dependencies using the provided `requirements.txt` file.
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
